@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Counter</title>
+    <link rel="stylesheet" href="task2.css">
+    <script src="task2.js"></script>
+</head>
+<body>
+    <div class="class">
+      <h1>Interactive Counter</h1>
+      <h2 id="count">0</h2>
+      <button id="increase">+</button>
+      <button id="decrease">-</button>
+      <button id="reset">Reset</button>
+    </div>
+    <script>
+        const count = document.getElementById("count");
+        const increase = document.getElementById("increase");
+        const decrease = document.getElementById("decrease");
+        const reset = document.getElementById("reset");
+
+        function updateColor(){
+            if(number > 0){
+              count.style.color = "Green";
+            }else if(number < 0){
+              count.style.color = "Red";
+            }else{
+              count.style.color = "black"
+            }
+        }
+
+        let number = 0;
+        increase.addEventListener("click",increaseNum);
+        function increaseNum(){
+            number++;
+            count.textContent = number;
+            updateColor();
+        };
+
+        decrease.addEventListener("click",decreaseNum);
+        function decreaseNum(){
+            number--;
+            count.textContent = number;
+            updateColor();
+        };
+
+        reset.addEventListener("click",reserNum);
+        function reserNum(){
+            number = 0;
+            count.textContent = number;
+            updateColor();
+        };
+        
+        
+
+        
+
+    </script>
+</body>
+</html>
