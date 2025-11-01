@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.class{
+    text-align: center;
+    margin-top: 80px;
+}
+#count{
+    font-size: 50px;
+    margin-top: 50px;
+}
+button {
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 20px;
+   margin-top: 50px;
+}
+#increase{
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+#decrease{
+    background-color: red;
+     border: none;
+    border-radius: 5px;
+    color: white;
+}
+#reset{
+    background-color:black;
+    border: none;
+    border-radius: 5px;
+    color: white
+}
